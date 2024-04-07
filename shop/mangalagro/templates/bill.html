@@ -1,0 +1,27 @@
+{%extends 'base.html'%}
+{% load static %}
+{%block title%} Feedback {%endblock%}
+{%block body %}
+
+<div class="container">
+    <div class="row my-3">
+        <div class="col-sm-6 offset-sm-3">
+            <h3 class="text-center">Invoice Bill</h3>
+            <hr>
+            <div class="text-center"><h3>MangalAgro Center</h3></div>
+            <div class="text-center">Address :Malkapur-Buldana Rd, Chalis Bigha, Malkapur, Maharashtra-443101</div>
+            <div class="text-center">Email : mangalagro@gmail.com   Contact : +917709852468</div>
+            <hr>
+            <p>Order Id : {{order.id}}</p>
+                <p>Order Date : {{order.ordered_date}}
+                <p>Product : {{order.product}}</p>
+                <p>Order Id : <img src="{{order.product.image.url}}" alt="" width="200px" height="200px"></p>
+                <p>Order Paid : {{order.payment.paid}}</p>
+                <p>Order Amount : {{order.payment.amount}}</p>
+                <p>Order Status : {{order.status}}</p>
+                <p>Payment Id : {{order.payment.razorpay_payment_id}}</p>
+            <hr>
+        </div>
+    </div>
+</div>
+{%endblock%}

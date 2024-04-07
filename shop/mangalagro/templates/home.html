@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block title%} home {%endblock%}
+
+
+{%block body%}
+<div class="container my-5">
+    <div class="row">
+        {%for prod in product%}
+        <div class="col text-center mb-4">
+            <a href="{% url 'product_detail' prod.id %}" class="btn">
+                <div>
+                    <img src="{{prod.image.url}}" alt="" width="200px" height="200px">
+                    <div class="fw-bold">{{prod.name}}</div>
+                    <div class="fw-bold text denger">RS.{{prod.price}}</div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{%endblock%}

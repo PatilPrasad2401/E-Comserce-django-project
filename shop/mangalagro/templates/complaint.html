@@ -1,0 +1,30 @@
+{%extends 'base.html'%}
+{% load static %}
+{%block title%} Complaint {%endblock%}
+{%block body %}
+
+
+
+<div class="container">
+    <div class="row my-3">
+        <div class="col-sm-6 offset-sm-3">
+            <h3 class="text-center">Complaint</h3>
+            <hr>
+
+            <form action="" method="post" novalidate class="shadow p-5">
+                {% csrf_token %}
+                <p>Order Id : {{order.id}}</p>
+                <p>Product : {{order.product}}</p>
+                <p>Order Id : <img src="{{order.product.image.url}}" alt="" width="200px" height="200px"></p>
+                {%for fm in form%}
+                {{fm.label_tag}}    {{fm}}
+                <br>
+                {%endfor%}
+             <div class="col-12 mt-3">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{%endblock%}

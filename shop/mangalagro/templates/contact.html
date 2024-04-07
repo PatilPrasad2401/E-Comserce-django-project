@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block title%} home {%endblock%}
+{%block banner %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{%static 'images/banner/them.jpg'%}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{%static 'images/banner/money.jpg'%}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="{%static 'images/banner/animalfood.jpg'%}" class="d-block w-100" alt="...">
+        </div>
+    </div>
+</div>
+{%endblock%}
+{%block body%}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center"> About Us</h2>
+    <br>
+    <div class="container">
+        <p class="fs-4 text-center">Address : Malkapur-Buldana </p>
+        <p class="fs-4 text-center">Contact : 9422180632</p>
+        <p class="fs-4 text-center">Email : dynandeo8422180632@gmail.com</p>
+
+    </div>
+</div>
+<br><br>
+
+{% endblock%}

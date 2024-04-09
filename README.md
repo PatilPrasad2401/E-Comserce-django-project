@@ -50,8 +50,8 @@ python manage.py runserver
 * This project was inspired by Django documentation.
 * Special thanks to the contributors of the dependencies used in this project.
 * Feel free to customize this README to fit your specific e-commerce website and project structure.
-=======
-**  Access the website at http://127.0.0.1:8000 in your web browser.
+
+* Access the website at http://127.0.0.1:8000/ in your web browser.
 
 ## Acknowledgments
 **This project was inspired by Django documentation.

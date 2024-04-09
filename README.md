@@ -1,4 +1,5 @@
 # E-Comserce-django-project
+<<<<<<< HEAD
 This is a full-stack e-commerce website built using Django, a high-level Python web framework. 
 The website allows users to browse products, add them to their cart, and proceed to checkout. 
 It also provides administrative features for managing products, orders, and customers.
@@ -10,6 +11,17 @@ It also provides administrative features for managing products, orders, and cust
 * Shopping cart: Users can add products to their cart, update quantities, and remove items.
 * Checkout process: Users can enter shipping details and complete their purchase.
 * Admin dashboard: Administrators can manage products, orders, and customers through an intuitive dashboard.
+=======
+This is a full-stack e-commerce website built using Django, a high-level Python web framework. The website allows users to browse products, add them to their cart, and proceed to checkout. It also provides administrative features for managing products, orders, and customers.
+
+## Features
+
+**User authentication: Users can register, log in, and log out.
+**Product browsing: Users can view products, search for products, and filter products by category.
+**Shopping cart: Users can add products to their cart, update quantities, and remove items.
+**Checkout process: Users can enter shipping details and complete their purchase.
+**Admin dashboard: Administrators can manage products, orders, and customers through an intuitive dashboard.
+>>>>>>> 2e6119cfee265e4ce6a64b58d0086aa3f6d3a389
 
 ## Navigate to the project directory:
 ```
@@ -31,10 +43,19 @@ python manage.py createsuperuser
 ```
 python manage.py runserver
 ```
+<<<<<<< HEAD
 * Access the website at http://127.0.0.1:8000/ in your web browser.
 
 ## Acknowledgments
 * This project was inspired by Django documentation.
 * Special thanks to the contributors of the dependencies used in this project.
 * Feel free to customize this README to fit your specific e-commerce website and project structure.
+=======
+**  Access the website at http://127.0.0.1:8000 in your web browser.
+
+## Acknowledgments
+**This project was inspired by Django documentation.
+**Special thanks to the contributors of the dependencies used in this project.
+**Feel free to customize this README to fit your specific e-commerce website and project structure.
+>>>>>>> 2e6119cfee265e4ce6a64b58d0086aa3f6d3a389
 

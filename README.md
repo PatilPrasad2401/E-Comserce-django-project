@@ -26,9 +26,10 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 ## Run the development server:
-```python manage.py runserver
 ```
-** Access the website at http://127.0.0.1:8000 in your web browser.
+python manage.py runserver
+```
+**  Access the website at http://127.0.0.1:8000 in your web browser.
 
 ## Acknowledgments
 **This project was inspired by Django documentation.
